@@ -162,81 +162,83 @@
 
         footer { text-align: center; padding: 100px; background: white; border-top: 5px solid #eee; }
 
-      @media (max-width: 768px) {
-html, body {
-max-width: 100%;
-overflow-x: hidden;
-}
-nav {
-position: static;
-}
-.cloud-container {
-display: none;
-}
-.content-layout {
-display: flex;
-flex-direction: column-reverse;
-gap: 28px;
-}
-.image-box img {
-width: 100%;
-height: auto;
-display: block;
-}
-.card {
-padding: 26px;
-margin: 20px 6px;
-border-radius: 24px;
-box-sizing: border-box;
-}
-.guide-text p {
-font-size: 1.2rem;
-line-height: 1.85;
-}
-h1, h2, h3, h4, h5, h6,
-.logo,
-footer h2 {
-font-family: inherit;
-font-style: normal;
-letter-spacing: 0.01em;
-font-weight: 600;
-}
-h1 {
-font-size: 2.5rem;
-}
-h2 {
-font-size: 2.2rem;
-}
-.tips-grid {
-grid-template-columns: 1fr;
-gap: 24px;
-}
-.affiliate-item,
-.product-box {
-background: none;
-border: none;
-padding: 0;
-margin: 24px 0 34px;
-box-shadow: none;
-}
-.product-link {
-display: inline-block;
-margin-top: 10px;
-max-width: 100%;
-white-space: normal;
-text-align: center;
-font-size: 1.15rem;
-}
-.topic-section {
-margin-top: 40px;
-padding: 0;
-border: none;
-}
-.logo {
-font-family: 'Arial', sans-serif;
-font-size: 2.8rem;
-text-transform: none;
-}
+      CSS@media (max-width: 768px) {
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  nav {
+    position: static;
+  }
+  .cloud-container {
+    display: none;
+  }
+  .content-layout {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 28px;
+  }
+  .image-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .card {
+    padding: 26px;
+    margin: 20px 6px;
+    border-radius: 24px;
+    box-sizing: border-box;
+  }
+  .guide-text p {
+    font-size: 1.2rem !important;
+    line-height: 1.85 !important;
+  }
+  h1, h2, h3, h4, h5, h6,
+  .logo,
+  footer h2 {
+    font-family: inherit !important;
+    font-style: normal !important;
+    letter-spacing: 0.01em !important;
+    font-weight: 600 !important;
+  }
+  h1 {
+    font-size: 2.5rem !important;
+  }
+  h2 {
+    font-size: 2.2rem !important;
+  }
+  .tips-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .affiliate-item,
+  .product-box {
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 40px 0 50px !important; /* Mehr Abstand für Trennung */
+    box-shadow: none !important;
+  }
+  .product-link {
+    display: inline-block;
+    margin-top: 10px;
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
+    font-size: 1.15rem !important;
+  }
+  section, .section, .topic-section, .berserk-study { /* Mehr mögliche Klassen für Topics */
+    margin-top: 60px !important;
+    padding: 0 !important;
+    border: none !important;
+  }
+  /* Logo spezifisch */
+  .logo, .site-logo, header .logo { 
+    font-family: 'Arial', sans-serif !important;
+    font-size: 2.8rem !important;
+    text-transform: none !important;
+    font-style: normal !important;
+  }
 }
         .legal-footer-area { text-align: center; padding: 40px; font-family: 'Varela Round', sans-serif; }
         .legal-link { color: #888; text-decoration: underline; font-size: 0.9rem; cursor: pointer; margin: 0 15px; font-weight: bold; }
@@ -557,5 +559,6 @@ text-transform: none;
 
 <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9c0fd910b8edf958',t:'MTc2ODkyNTQ4OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
+
 
 
