@@ -175,15 +175,46 @@
     position: static;
   }
 
+  .cloud-container {
+    display: none;
+  }
+
   .content-layout {
     display: flex;
-    flex-direction: column-reverse; /* Bild oben */
+    flex-direction: column-reverse;
     gap: 25px;
   }
 
   .image-box img {
     width: 100%;
     height: auto;
+    display: block;
+  }
+
+  .card {
+    padding: 25px;
+    margin: 20px 10px;
+    border-radius: 25px;
+    box-sizing: border-box;
+  }
+
+  .guide-text p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  h1, h2, h3, h4, h5, h6,
+  .logo,
+  nav a {
+    font-style: normal;
   }
 
   .tips-grid {
@@ -194,6 +225,7 @@
     max-width: 100%;
     white-space: normal;
     text-align: center;
+    display: inline-block;
   }
 
 }
@@ -439,6 +471,11 @@
     <p>Your room is the only place you're in charge of. Make it legendary.</p>
     <br>
     <p>© oldanime.com | Honestly curated for the community.</p>
+
+    <!-- Affiliate disclaimer -->
+    <p class="affiliate-disclaimer">
+        This website contains affiliate links.
+    </p>
 
     <div class="legal-footer-area">
         <span class="legal-link" onclick="openLegal('modal-imp')">Impressum</span>
